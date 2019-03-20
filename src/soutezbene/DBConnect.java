@@ -21,7 +21,7 @@ public class DBConnect {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             
-            conn = DriverManager.getConnection("jdbc:mysql://10.48.5.99:3306/beneplus","beneplus","+4:TW?bgl!HkQ0wgt#:ZtQip!");
+            conn = DriverManager.getConnection("jdbc:mysql://server"); //add db server
             st = conn.createStatement();
             
         }catch(Exception ex) {
